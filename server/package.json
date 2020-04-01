@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --watch src -e ts --exec ts-node src/index.ts",
+    "build": "rd /s /q dist & tsc"
+  },
+  "dependencies": {
+    "@types/mongoose": "^5.7.8",
+    "@types/multer": "^1.4.2",
+    "@types/node": "^13.9.5",
+    "class-transformer": "^0.2.3",
+    "class-validator": "^0.12.0-rc.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.6",
+    "multer": "^1.4.2",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.3",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
+  }
+}

@@ -1,0 +1,4 @@
+  MovieModel.create(movie);                  // 添加到数据库后，返回带ID的movie
+  MovieModel.deleteOne({ _id: id });         // 通过id删除
+  MovieModel.updateOne({ _id: id }, movie);  // 增量修改
+  MovieModel.findById(id);                   // 通过id查询
